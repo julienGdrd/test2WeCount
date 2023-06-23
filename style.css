@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table
+ {
+    border: 1px solid #333;
+}
+th, td{
+    border: 1px solid #333
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tennis simulator</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Tennis simulator</h1>
+    <form id="playersInfos">
+      <div>
+        <label for="player1_name">Nom joueur 1 :</label>
+        <input type="text" id="player1_name" />
+
+        <label for="player1_level">Niveau joueur 1 :</label>
+        <input type="number" id="player1_level" min="1" max="10" value="1" />
+      </div>
+
+      <div>
+        <label for="player2_name">Nom joueur 2 :</label>
+        <input type="text" id="player2_name" />
+
+        <label for="player2_level">Niveau joueur 2 :</label>
+        <input type="number" id="player2_level" min="1" max="10" value="1" />
+      </div>
+
+      <button id="startBtn" type="submit">Commencer le match</button>
+    </form>
+
+    <h2>Liste des points</h2>
+    <button id="resultBtn">Voir le résultat</button>
+    <div id="scoreTab">
+      <table>
+        <caption></caption>
+        <thead>
+          <tr id="colHead">
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="rowPlayer1">
+            <th id="rowPlayer1Name" scope="row">Player 1</th>
+          </tr>
+          <tr id="rowPlayer2">
+            <th id="rowPlayer2Name" scope="row">Player 2</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <ul id="pointResultList"></ul>
+    </div>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
